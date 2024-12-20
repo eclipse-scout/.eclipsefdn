@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-scout') {
+orgs.newOrg('technology.scout', 'eclipse-scout') {
   settings+: {
     description: "",
     name: "Eclipse Scout™",
