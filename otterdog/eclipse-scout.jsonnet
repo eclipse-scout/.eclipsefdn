@@ -24,7 +24,7 @@ orgs.newOrg('technology.scout', 'eclipse-scout') {
     orgs.newRepo('scout.docs') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "releases/24.2",
+      default_branch: "releases/25.1",
       delete_branch_on_merge: false,
       description: "Scout project documentation",
       has_issues: false,
@@ -93,7 +93,7 @@ orgs.newOrg('technology.scout', 'eclipse-scout') {
     orgs.newRepo('scout.maven-master') {
       allow_squash_merge: false,
       allow_update_branch: false,
-      default_branch: "releases/24.2",
+      default_branch: "releases/25.1",
       delete_branch_on_merge: false,
       homepage: "https://www.eclipse.org/scout/",
       web_commit_signoff_required: false,
@@ -105,8 +105,9 @@ orgs.newOrg('technology.scout', 'eclipse-scout') {
       allow_auto_merge: true,
       allow_squash_merge: false,
       allow_update_branch: false,
-      default_branch: "releases/24.2",
+      default_branch: "releases/25.1",
       homepage: "https://www.eclipse.org/scout/",
+      has_discussions: true,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -119,14 +120,22 @@ orgs.newOrg('technology.scout', 'eclipse-scout') {
           requires_status_checks: false,
           requires_strict_status_checks: true,
         },
+        orgs.newBranchProtectionRule('releases/24.1') {
+          lock_branch: true,
+          required_approving_review_count: null,
+          requires_pull_request: false,
+          requires_status_checks: false,
+          requires_strict_status_checks: true,
+        },
       ],
     },
     orgs.newRepo('scout.sdk') {
       allow_squash_merge: false,
       allow_update_branch: false,
-      default_branch: "releases/13.0",
+      default_branch: "releases/14.0",
       delete_branch_on_merge: false,
       homepage: "https://www.eclipse.org/scout/",
+      private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
