@@ -14,7 +14,6 @@ orgs.newOrg('technology.scout', 'eclipse-scout') {
       allow_squash_merge: false,
       allow_update_branch: false,
       default_branch: "master",
-      delete_branch_on_merge: false,
       homepage: "https://www.eclipse.org/scout/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -25,7 +24,6 @@ orgs.newOrg('technology.scout', 'eclipse-scout') {
       allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "releases/26.1",
-      delete_branch_on_merge: false,
       description: "Scout project documentation",
       has_issues: false,
       has_wiki: false,
@@ -94,7 +92,6 @@ orgs.newOrg('technology.scout', 'eclipse-scout') {
       allow_squash_merge: false,
       allow_update_branch: false,
       default_branch: "releases/26.1",
-      delete_branch_on_merge: false,
       homepage: "https://www.eclipse.org/scout/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -133,7 +130,6 @@ orgs.newOrg('technology.scout', 'eclipse-scout') {
       allow_squash_merge: false,
       allow_update_branch: false,
       default_branch: "releases/14.0",
-      delete_branch_on_merge: false,
       homepage: "https://www.eclipse.org/scout/",
       private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
@@ -145,7 +141,6 @@ orgs.newOrg('technology.scout', 'eclipse-scout') {
       allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
-      delete_branch_on_merge: false,
       web_commit_signoff_required: false,
       workflows+: {
         enabled: false,
