@@ -23,7 +23,7 @@ orgs.newOrg('technology.scout', 'eclipse-scout') {
     orgs.newRepo('scout.docs') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "releases/26.1",
+      default_branch: "releases/26.2",
       description: "Scout project documentation",
       has_issues: false,
       has_wiki: false,
@@ -91,7 +91,7 @@ orgs.newOrg('technology.scout', 'eclipse-scout') {
     orgs.newRepo('scout.maven-master') {
       allow_squash_merge: false,
       allow_update_branch: false,
-      default_branch: "releases/26.1",
+      default_branch: "releases/26.2",
       homepage: "https://www.eclipse.org/scout/",
       web_commit_signoff_required: false,
       workflows+: {
@@ -102,7 +102,7 @@ orgs.newOrg('technology.scout', 'eclipse-scout') {
       allow_auto_merge: true,
       allow_squash_merge: false,
       allow_update_branch: false,
-      default_branch: "releases/26.1",
+      default_branch: "releases/26.2",
       homepage: "https://www.eclipse.org/scout/",
       has_discussions: true,
       web_commit_signoff_required: false,
